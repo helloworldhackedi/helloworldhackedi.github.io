@@ -3,6 +3,6 @@ html {
 }
 
 body {
-    background-color: rgb(16, 5, 58);
+    background: linear-gradient(#17084d, #000000);
     font-family: Assistant;
 }
