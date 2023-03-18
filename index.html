@@ -14,60 +14,25 @@
       media="screen,projection"
     />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Martian+Mono&family=Rampart+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Martian+Mono&family=Russo+One&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
-      rel="stylesheet"
-    />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HWH 23</title>
   </head>
   <body>
-    <div id="top"></div>
-    <div class="hide-on-small-only">
-      <div class="row valign-wrapper" style="height: 90vh">
-        <div class="col m6 center-align">
-          <h1 style="font-family: 'Allerta Stencil'" class="white-text">
-            Hello World Hackathon
-          </h1>
-
-          <h4 style="font-family: Martian Mono" class="white-text">
-            01.04.2023
-          </h4>
-        </div>
-        <div class="col m6 center-align">
-          <img src="img/logo.svg" style="width: 50%" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="hide-on-med-and-up">
-      <div class="row" style="height: 90vh">
-        <div class="col s12 center-align">
-          <h1 style="font-family: 'Rampart One'">Hello World Hackathon</h1>
-          <h4 style="font-family: Martian Mono">01.04.2023</h4>
-        </div>
-        <div class="col s12 center-align">
-          <div class="parallax">
-            <img src="img/logo.svg" style="width: 50%" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="height: 64px">
-      <nav class="teal" id="navbar" style="z-index: 10; position: relative">
+    <div class="navbar-fixed">
+      <nav id="navbar" style="background-color: #090b27">
         <div class="nav-wrapper container">
           <a href="#top" class="brand-logo"
-            ><img src="img/logo.svg" alt="" style="width: 64px"
+            ><img src="img/awful_logo_glow.svg" alt="" style="width: 64px"
           /></a>
           <a href="#" class="sidenav-trigger" data-target="nav-mobile"
             ><i class="material-icons">menu</i></a
@@ -76,24 +41,66 @@
             <li><a href="#about">About</a></li>
             <li><a href="#details">Details</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#org">Organisers</a></li>
             <li><a href="#apply">Apply</a></li>
           </ul>
         </div>
       </nav>
     </div>
 
+    <div class="hide-on-small-only rellax" data-rellax-tablet-speed="5">
+      <div class="row valign-wrapper" style="height: 90vh">
+        <div class="col m6 center-align">
+          <h1 style="font-family: 'Russo One'" class="white-text">
+            Hello World Hackathon
+          </h1>
+
+          <h4 style="font-family: Russo One" class="white-text">01.04.2023</h4>
+          <br />
+          <a
+            class="waves-effect waves-light btn red pulse"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf32g0Tw0_VIvZR9ZXkWxD4OahDR9gFGF_0_JSTEcji9_LfZg/viewform"
+            >Apply</a
+          >
+        </div>
+        <div class="col m6 center-align">
+          <img src="img/awful_logo_glow.svg" style="width: 50%" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hide-on-med-and-up">
+      <div class="row" style="height: 90vh">
+        <div class="col s12 center-align">
+          <h1 style="font-family: 'Russo One'" class="white-text">
+            Hello World Hackathon
+          </h1>
+          <h4 style="font-family: Russo One" class="white-text">01.04.2023</h4>
+          <a
+            class="waves-effect waves-light btn red pulse"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf32g0Tw0_VIvZR9ZXkWxD4OahDR9gFGF_0_JSTEcji9_LfZg/viewform"
+            >Apply</a
+          >
+        </div>
+        <div class="col s12 center-align">
+          <img src="img/awful_logo_glow.svg" style="width: 50%" alt="" />
+        </div>
+      </div>
+    </div>
+
     <ul class="sidenav" id="nav-mobile">
       <li><a href="#about">About</a></li>
       <li><a href="#details">Details</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#org">Organisers</a></li>
       <li><a href="#apply">Apply</a></li>
     </ul>
 
-    <div class="section container" id="about">
+    <div class="section container rellax" id="about" data-rellax-tablet-speed="5">
       <h2 class="white-text">About</h2>
       <div class="row">
         <div class="col l5 s12">
-          <p class="flow-text white-text">
+          <p class="flow-text white-text" style="font-size: 1.3em">
             Hello World Hack is a 12 hour, beginner-orientated hackathon. If
             you've never attended a hackathon, or recently picked up programming
             and want to get a project off the ground, this is the hackathon for
@@ -101,25 +108,26 @@
           </p>
         </div>
         <div class="col l5 offset-l2 s12">
-          <img src="img/img1.jpeg" width="450" alt="" class="materialboxed" />
+          <img src="img/img1.jpeg" width="450" alt="" />
         </div>
       </div>
       <br /><br />
       <div class="row">
         <div class="col l5 s12 push-l7">
-          <p class="flow-text white-text">
+          <p class="flow-text white-text" style="font-size: 1.3em">
             Filled with workshops on setting up a project, building it, and
             testing it, awesome prizes and food galore! The best part, it's all
             free!
           </p>
         </div>
         <div class="col l5 s12 pull-l5">
-          <img src="img/ws.jpeg" width="450" alt="" class="materialboxed" />
+          <img src="img/ws.jpeg" width="450" alt="" />
         </div>
       </div>
     </div>
 
-    <h4 class="center white-text">Gallery</h4>
+    <div class="section container rellax" id="gal" data-rellax-tablet-speed="5">
+      <h4 class="center white-text">Gallery</h4>
 
     <div class="row">
       <div class="col l6 m8 s12 offset-l3 offset-m2">
@@ -165,13 +173,16 @@
         </div>
       </div>
     </div>
+    </div>
 
-    <div class="section container" id="details">
+
+
+    <div class="section container rellax" id="details" data-rellax-tablet-speed="5">
       <h2 class="white-text">Details</h2>
       <h4 class="center white-text">FAQs</h4>
       <div class="row">
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">What is a hackathon?</span>
               <p>
@@ -185,7 +196,7 @@
           </div>
         </div>
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">Where/When</span>
               <p>
@@ -198,7 +209,7 @@
           </div>
         </div>
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">Food</span>
               <p>
@@ -210,7 +221,7 @@
           </div>
         </div>
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">Who may attend?</span>
               <p>
@@ -222,7 +233,7 @@
           </div>
         </div>
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">How are you beginner-friendly?</span>
               <p>
@@ -235,7 +246,7 @@
           </div>
         </div>
         <div class="col l4 m6 s12">
-          <div class="card teal darken-1 hoverable small">
+          <div class="card hoverable small" style="background-color: #090b27">
             <div class="card-content white-text">
               <span class="card-title">Teams</span>
               <p>
@@ -250,17 +261,17 @@
       <h4 class="center white-text">Schedule</h4>
     </div>
 
-    <div class="section container" id="sponsors">
+    <div class="section container rellax" id="sponsors" data-rellax-tablet-speed="5">
       <h2 class="white-text">Sponsors</h2>
-      <h4 class="white-text">Silver</h4>
+      <h4 class="white-text center">Silver</h4>
+      <br /><br />
       <div class="row">
         <div class="col l4 s12 offset-l4">
-          <div class="card hoverable large">
+          <div class="card hoverable large" style="background-color: #0d125e">
             <div class="card-image">
               <img src="img/cgg.png" />
-              <span class="card-title">CGG</span>
             </div>
-            <div class="card-content">
+            <div class="card-content white-text">
               <p>
                 CGG is a global technology and HPC leader that provides data,
                 products, services and solutions in Earth science, data science,
@@ -273,15 +284,16 @@
           </div>
         </div>
       </div>
-      <h4 class="white-text">Bronze</h4>
+      <br /><br />
+      <h4 class="white-text center">Bronze</h4>
+      <br /><br />
       <div class="row">
-        <div class="col l4 s12 offset-l2">
-          <div class="card hoverable large">
+        <div class="col l4 s12">
+          <div class="card hoverable large" style="background-color: #0d125e">
             <div class="card-image">
               <img src="img/newtyne.png" />
-              <span class="card-title black-text">Newtyne</span>
             </div>
-            <div class="card-content">
+            <div class="card-content white-text">
               <p>
                 Newtyne Consultancy & Training Limited is a specialist provider
                 of Data, Business Intelligence and Analytics learning solutions
@@ -294,12 +306,11 @@
           </div>
         </div>
         <div class="col l4 s12">
-          <div class="card hoverable large">
+          <div class="card hoverable large" style="background-color: #0d125e">
             <div class="card-image">
               <img src="img/accenture.png" />
-              <span class="card-title">Accenture</span>
             </div>
-            <div class="card-content">
+            <div class="card-content white-text">
               <p>
                 Accenture is a global professional services company with leading
                 capabilities in digital, cloud and security.
@@ -310,21 +321,78 @@
             </div>
           </div>
         </div>
+        <div class="col l4 s12">
+          <div class="card hoverable large" style="background-color: #0d125e">
+            <div class="card-image">
+              <img src="img/ms.png" />
+            </div>
+            <div class="card-content white-text">
+              <p>
+                Morgan Stanley help people, businesses and institutions build,
+                preserve and manage wealth so they can pursue their financial
+                goals.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.morganstanley.com/">Find out more</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="section container" id="apply">
+
+    <div class="section container rellax" id="org" data-rellax-tablet-speed="5">
+      <h2 class="white-text">Organisers</h2>
+      <div class="row">
+        <div class="col l5 s12">
+          <h3 class="white-text">Programming Society</h3>
+          <p class="flow-text white-text" style="font-size: 1.3em">
+            The University of Edinburgh Programming Society works as a platform
+            connecting students across various disciplines interested in
+            learning to code.
+          </p>
+        </div>
+        <div class="col l5 offset-l2 s12 center">
+          <a href="https://ediprogsoc.github.io"
+            ><img src="img/eups_logo.svg" width="250" alt=""
+          /></a>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row">
+        <div class="col l5 s12 push-l7">
+          <h3 class="white-text">EUWiSTEM Society</h3>
+          <p class="flow-text white-text" style="font-size: 1.3em">
+            Women in STEM aims to promote, support and connect women in STEM at
+            the University of Edinburgh and the wider community.
+          </p>
+        </div>
+        <div class="col l5 s12 pull-l5 center">
+          <a href="https://www.euwistem.com/"
+            ><img src="img/euwistem.png" width="250" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section container rellax" id="apply" data-rellax-tablet-speed="5">
       <h2 class="white-text">Apply</h2>
+      <a
+        class="waves-effect waves-light btn red"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf32g0Tw0_VIvZR9ZXkWxD4OahDR9gFGF_0_JSTEcji9_LfZg/viewform"
+        >Apply</a
+      >
       <p class="flow-text white-text">
-        We'll open applications here very shortly! Want to participate in Hello
-        World Hack but feel a little overqualified? Why not become a mentor?
-        Mentors are a vital part of Hello World Hack. Each team will be assigned
-        a mentor to help them with their project. As a mentor you will work
-        closely with the teams while also getting an opportunity to chat to
-        sponsors. If you have been to a hackathon before or have work experience
-        then we encourage you to get involved!
+        Apply now to join Hello World Hack 2023 as a participant or as a mentor!
+        Want to be part of Hello World Hack but feel a little overqualified? Why
+        not become a mentor? Mentors are a vital part of Hello World Hack. Each
+        team will be assigned a mentor to help them with their project. As a
+        mentor you will work closely with the teams while also getting an
+        opportunity to chat to sponsors. If you have been to a hackathon before
+        or have work experience then we encourage you to get involved!
       </p>
     </div>
-    <footer class="page-footer teal">
+    <footer class="page-footer rellax" style="background-color: #090b27" data-rellax-tablet-speed="5">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -336,10 +404,20 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Contact</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://ediprogsoc.co.uk"
+                  >Programming Society</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.euwistem.com/"
+                  >EUWiSTEM Society</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -362,17 +440,34 @@
         top: window.innerHeight - navbar.offsetHeight,
         offset: 0,
       };
-      var pp = M.Pushpin.init(navbar, options);
+      // var pp = M.Pushpin.init(navbar, options);
       var photos = document.getElementById("photos");
       M.Slider.init(photos);
-      const updateSize = () => {
-        var options = {
-          top: window.innerHeight - navbar.offsetHeight,
-          offset: 0,
-        };
-        pp = M.Pushpin.init(navbar, options);
+      // const updateSize = () => {
+      //   var options = {
+      //     top: window.innerHeight - navbar.offsetHeight,
+      //     offset: 0,
+      //   };
+      //   pp = M.Pushpin.init(navbar, options);
+      // };
+      // window.addEventListener("resize", updateSize);
+      window.onscroll = function () {
+        scrollFunction();
       };
-      window.addEventListener("resize", updateSize);
+
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = `${
+            3.2 * document.documentElement.scrollTop - 64
+          }px`;
+        }
+      }
+    </script>
+    <script src="js/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax");
     </script>
   </body>
 </html>
